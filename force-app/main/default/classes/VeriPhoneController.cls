@@ -2,6 +2,7 @@ public with sharing class VeriPhoneController {
     @AuraEnabled
     public static VeriPhoneDescriptor verifyPhone(String phone){
         //I am having my API Key in custom label. You can use the key directly in code itself !!
+        //Adding comment
         string endpoint='https://api.veriphone.io/v2/verify?phone='+phone+'&key='+Label.apiKey;
         Http http = new Http();
         HttpRequest request = new HttpRequest();
